@@ -1,4 +1,7 @@
+
+--aqui estou criando uma tabela com as colunas e ID
 -- CRIAMOS AS TABELAS PRIMEIRO
+
 
 -- CREATE TABLE Alunos (
 --     id_aluno INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -32,7 +35,7 @@
 
 
 
-
+--AQUI ESTOU INSERINDO DADOS DENTRO DA COLUNA NA TABELA Alunos,Cursos,Professores etc...
 
 -- SIMULANDO OS DADOS POR TABELAS
 -- INSERT POR ALUNOS
@@ -78,3 +81,18 @@
 --
 -- INSERT INTO Matriculas (id_aluno, id_curso, id_professor, forma_pagamen)
 -- VALUES (5, 5, 5, 'Dinheiro');
+
+
+--quando for pegar todas as tabelas com a chaveira estrangeira da tabela usa esse codigo: 
+
+
+-- SELECT
+--     A.nome AS NOME, 
+--     A.nota AS NOTA, 
+--     C.nome_curso AS CURSO, 
+--     P.nome AS PROFESSOR, 
+--     M.id_matricula AS  MATRICULA
+-- FROM Matriculas M 
+-- JOIN Alunos A ON M.id_aluno = A.id_aluno 
+-- JOIN Cursos C ON M.id_curso = C.id_curso 
+-- JOIN Professores P ON M.id_professor = P.id_professor; 
