@@ -96,3 +96,10 @@
 -- JOIN Alunos A ON M.id_aluno = A.id_aluno 
 -- JOIN Cursos C ON M.id_curso = C.id_curso 
 -- JOIN Professores P ON M.id_professor = P.id_professor; 
+
+
+SELECT *
+FROM PAGAMENTO pg
+JOIN CLIENTE c ON pg.id_cliente = c.id_cliente
+JOIN PEDIDO pd ON pg.id_pedido = pd.id_pedido
+JOIN PRODUTO pr ON pg.id_produto = pr.id_produto;
