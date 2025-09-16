@@ -107,3 +107,19 @@ FROM PAGAMENTO pg
 JOIN CLIENTE c ON pg.id_cliente = c.id_cliente
 JOIN PEDIDO pd ON pg.id_pedido = pd.id_pedido
 JOIN PRODUTO pr ON pg.id_produto = pr.id_produto;
+  
+
+INSERT INTO PEDIDO (id_cliente, id_produto, id_pagamento,status_da_entrega) VALUES (1, 1, 1, "enviado');  
+
+
+
+
+
+
+16/09 19:44 
+SELECT *
+FROM PEDIDO pd
+JOIN CLIENTE c ON pd.id_cliente = c.id_cliente
+JOIN PAGAMENTO pg ON pg.id_pagamento = pg.id_pagamento
+JOIN PRODUTO pr ON pd.id_produto = pr.id_produto;
+  
