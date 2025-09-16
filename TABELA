@@ -32,7 +32,11 @@
 --     FOREIGN KEY (id_professor) REFERENCES Professores(id_professor)
 -- );
 
-
+CREATE TABLE CLIENTE (
+    id_cliente INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT,
+      INTEGER
+);
 
 
 --AQUI ESTOU INSERINDO DADOS DENTRO DA COLUNA NA TABELA Alunos,Cursos,Professores etc...
