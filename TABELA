@@ -122,4 +122,25 @@ FROM PEDIDO pd
 JOIN CLIENTE c ON pd.id_cliente = c.id_cliente
 JOIN PAGAMENTO pg ON pg.id_pagamento = pg.id_pagamento
 JOIN PRODUTO pr ON pd.id_produto = pr.id_produto;
-  
+---------------------------------------------------------
+
+17/09 09:06 AM
+CREATE TABLE CLIENTE (
+    id_cliente INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome TEXT,
+    pnome TEXT,
+    cep TEXT,
+	rg TEXT
+);
+
+CREATE TABLE PRODUTO	 (
+    id_produto INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome_produto TEXT,
+    preco  REAL, 
+	quantidade INTEGER
+);
+
+CREATE TABLE PAGAMENTO (
+    id_pagamento  INTEGER PRIMARY KEY AUTOINCREMENT,
+    forma_de_pagamento TEXT
+);
